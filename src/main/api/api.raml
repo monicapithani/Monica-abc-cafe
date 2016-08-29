@@ -1,0 +1,58 @@
+#%RAML 0.8
+title: ABC-cafe-monica
+version: 1.0
+baseUri: http://localhost:8081/abcCafe
+/billData:
+  displayName: BillTo Data
+  get:
+    description: |
+     insert Billto data
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "message","BillTo Data inserted successfully" 
+              }
+/sellData:
+  displayName: SellTo Data
+  get:
+    description: |
+      insert sellTo Data
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "message","SellTo Data inserted successfully"
+              }
+/machinesData:
+  displayName: Machines Data
+  get:
+    description: |
+      insert machine Data
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "message","SellTo Data inserted successfully"
+              }
+/pushData:
+  displayName: Push Data from DB
+  get:
+    description: |
+      push data from Database
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "message","Data pushed to JMS successfully"
+              }
+    
+      
